@@ -1,0 +1,6 @@
+@mixin card($padding: 0, $radius: 0, $bckg-color: transparent, $text-color: black) {
+    padding: $padding;
+    border-radius: $radius;
+    background-color: $bckg-color;
+    color: $text-color;
+}

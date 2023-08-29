@@ -1,0 +1,26 @@
+@use "mixins";
+
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+    .wrap {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        text-align: center;
+        .card-content {
+            width: 50%;
+        }
+    }
+}
+
+.left {
+    @include mixins.card($padding: 15px, $radius: 8px, $bckg-color: grey);
+}
+
+.right {
+    @include mixins.card($padding: 25px, $bckg-color: blue, $text-color: white);
+}
